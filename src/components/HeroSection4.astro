@@ -1,0 +1,73 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative" id="concerts">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+        <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+    </div>
+    <Container>
+        <div class="relative pt-36 ml-auto">
+            <div class="lg:w-2/3 text-center mx-auto">
+                <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
+                    Producción de Conciertos <span class="text-primary dark:text-white">Profesional</span>
+                </h1>
+                <p class="mt-8 text-gray-700 dark:text-gray-300">
+                    En Fyve Studio, ofrecemos servicios completos de producción para conciertos, asegurando que cada evento sea una experiencia inolvidable. Nos especializamos en sonido, iluminación y coordinación general de eventos en vivo.
+                </p>
+                <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                    <a
+                      href="#contact"
+                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                    >
+                      <span class="relative text-base font-semibold text-white">Contáctanos</span>
+                    </a>
+                    <a
+                      href="#equipment"
+                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+                    >
+                      <span class="relative text-base font-semibold text-primary dark:text-white">Nuestro Equipo</span>
+                    </a>
+                </div>
+                <div class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Sonido Profesional</h6>
+                        <p class="mt-2 text-gray-500">Equipos de última generación para una experiencia sonora inigualable.</p>
+                    </div>
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Iluminación Creativa</h6>
+                        <p class="mt-2 text-gray-500">Diseños de iluminación que transforman el ambiente del evento.</p>
+                    </div>
+                    <div class="text-left">
+                        <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Coordinación Integral</h6>
+                        <p class="mt-2 text-gray-500">Gestión completa de eventos para garantizar que todo salga a la perfección.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Equipos Disponibles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-white">Altavoces</h3>
+                        <ul class="list-disc list-inside mt-4 text-gray-700 dark:text-gray-300">
+                            <li>Altavoces JBL Pro</li>
+                            <li>Subwoofers Yamaha DXS</li>
+                            <li>Monitores de escenario Bose</li>
+                            <li>Altavoces activos QSC</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-white">Instrumentos</h3>
+                        <ul class="list-disc list-inside mt-4 text-gray-700 dark:text-gray-300">
+                            <li>Guitarras Fender Stratocaster</li>
+                            <li>Batería Tama Imperialstar</li>
+                            <li>Teclados Yamaha Montage</li>
+                            <li>Bajos Fender Precision</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>
+</div>
