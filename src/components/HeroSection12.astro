@@ -1,0 +1,46 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative py-16">
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <Container>
+    <div class="relative">
+      <div class="text-center mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Sobre Nosotros</h1>
+        <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
+          En Fyve Studio, nos dedicamos a capturar los momentos más importantes de tu vida con pasión y profesionalismo. Nuestra filosofía se centra en la innovación, la creatividad y la calidad en cada proyecto que emprendemos.
+        </p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <img src="./images/team/david-nacro.jpg" alt="David Nacro" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">David Nacro</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Fundador y CEO</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-300">Soy apasionado de la videografía y la fotografía desde hace muchos años. Cada toma y cada proyecto son una oportunidad para capturar la esencia de los momentos más especiales.</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/team/nicolas-aravena.jpg" alt="Nicolas Aravena" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Nicolas Aravena</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">CTO y Cofundador</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-300">Apasionado del mundo digital y del sonido para conciertos y eventos. Me encanta explorar nuevas tecnologías y aplicarlas para ofrecer experiencias únicas y memorables.</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/team/maria-garcia.jpg" alt="Maria Garcia" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Maria Garcia</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Asesora</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-300">Con una amplia experiencia en asesoría, estoy aquí para ayudarte a tomar las mejores decisiones para tus eventos y proyectos audiovisuales.</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/team/laura-hernandez.jpg" alt="Laura Hernandez" class="w-32 h-32 mx-auto rounded-full object-cover">
+          <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Laura Hernandez</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Atención al Cliente</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-300">Dedicada a brindar un servicio excepcional, me encargo de que cada cliente tenga una experiencia satisfactoria y sin preocupaciones.</p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>
