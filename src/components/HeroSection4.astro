@@ -23,11 +23,19 @@ import Container from "./Container.astro";
                     >
                       <span class="relative text-base font-semibold text-white">Contáctanos</span>
                     </a>
+                    
                     <a
                       href="#equipment"
                       class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
                     >
                       <span class="relative text-base font-semibold text-primary dark:text-white">Nuestro Equipo</span>
+                    </a>
+
+                    <a
+                      href="/src/assets/catalogo.pdf" download
+                      class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+                    >
+                      <span class="relative text-base font-semibold text-primary dark:text-white">Descargar Catálogo</span>
                     </a>
                 </div>
                 <div class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
@@ -45,29 +53,7 @@ import Container from "./Container.astro";
                     </div>
                 </div>
             </div>
-            <div class="mt-12">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Equipos Disponibles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-white">Altavoces</h3>
-                        <ul class="list-disc list-inside mt-4 text-gray-700 dark:text-gray-300">
-                            <li>Altavoces JBL Pro</li>
-                            <li>Subwoofers Yamaha DXS</li>
-                            <li>Monitores de escenario Bose</li>
-                            <li>Altavoces activos QSC</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-white">Instrumentos</h3>
-                        <ul class="list-disc list-inside mt-4 text-gray-700 dark:text-gray-300">
-                            <li>Guitarras Fender Stratocaster</li>
-                            <li>Batería Tama Imperialstar</li>
-                            <li>Teclados Yamaha Montage</li>
-                            <li>Bajos Fender Precision</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </Container>
 </div>
