@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+---
+
+<Layout title="Quiénes Somos - Fyve Studio">
+  <main class="py-16">
+    <Container>
+      <div class="text-center mx-auto mb-12">
+        <h1 class="text-4xl font-bold text-primary dark:text-primary-light md:text-5xl">Quiénes Somos</h1>
+        <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
+          Conoce más sobre nuestra filosofía, nuestro equipo y nuestra pasión por la fotografía y el mundo digital.
+        </p>
+      </div>
+      <div class="space-y-12">
+        <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestra Filosofía</h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            En Fyve Studio, creemos en la capacidad transformadora de la creatividad y la tecnología. Nos dedicamos a capturar y realzar los momentos más especiales de la vida a través de la fotografía y el video, utilizando enfoques innovadores y técnicas avanzadas.
+          </p>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            Nuestra misión es proporcionar a nuestros clientes imágenes y videos que no solo documenten eventos, sino que cuenten una historia y evoquen emociones duraderas.
+          </p>
+        </section>
+
+        <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestro Equipo</h2>
+          <div class="mt-6 space-y-6">
+            <div class="flex items-center space-x-4">
+              <img
+                src="./images/avatars/avatar-david.jpg"
+                alt="David Nacro"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">David Nacro</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Fundador y CEO</p>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">
+                  Apasionado de la videografía y la fotografía desde hace muchos años. Su visión y liderazgo han sido fundamentales para el crecimiento y éxito de Fyve Studio.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="./images/avatars/avatar-nicolas.jpg"
+                alt="Nicolas Aravena"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Nicolas Aravena</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">CTO y Cofundador</p>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">
+                  Apasionado del mundo digital y experto en sonido para conciertos y eventos. Su conocimiento técnico y creatividad son vitales para nuestros proyectos.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="./images/avatars/avatar-maria.jpg"
+                alt="Maria Garcia"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Maria Garcia</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Asesora</p>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">
+                  Con una amplia experiencia en asesoramiento, Maria garantiza que cada cliente reciba la atención y orientación necesarias para sus proyectos.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="./images/avatars/avatar-laura.jpg"
+                alt="Laura Hernandez"
+                class="h-20 w-20 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Laura Hernandez</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Atención al Cliente</p>
+                <p class="mt-2 text-gray-600 dark:text-gray-300">
+                  Especialista en atención al cliente, Laura se asegura de que todas las necesidades de nuestros clientes sean atendidas de manera eficiente y amable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Container>
+  </main>
+</Layout>
