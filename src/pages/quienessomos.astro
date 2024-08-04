@@ -4,89 +4,132 @@ import Container from '../components/Container.astro';
 ---
 
 <Layout title="Quiénes Somos - Fyve Studio">
-  <main class="py-16">
+  <main class="relative py-16">
+    <!-- Fondo con desenfoque y gradientes -->
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+      <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+      <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+    </div>
     <Container>
-      <div class="text-center mx-auto mb-12">
-        <h1 class="text-4xl font-bold text-primary dark:text-primary-light md:text-5xl">Quiénes Somos</h1>
-        <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
-          Conoce más sobre nuestra filosofía, nuestro equipo y nuestra pasión por la fotografía y el mundo digital.
-        </p>
-      </div>
-      <div class="space-y-12">
-        <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestra Filosofía</h2>
-          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            En Fyve Studio, creemos en la capacidad transformadora de la creatividad y la tecnología. Nos dedicamos a capturar y realzar los momentos más especiales de la vida a través de la fotografía y el video, utilizando enfoques innovadores y técnicas avanzadas.
+      <div class="relative z-10">
+        <div class="text-center mx-auto mb-12">
+          <h1 class="text-4xl font-bold text-primary dark:text-primary-light md:text-5xl">Quiénes Somos</h1>
+          <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">
+            Conoce más sobre nuestra filosofía, nuestro equipo y nuestra pasión por la fotografía y el mundo digital.
           </p>
-          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            Nuestra misión es proporcionar a nuestros clientes imágenes y videos que no solo documenten eventos, sino que cuenten una historia y evoquen emociones duraderas.
-          </p>
-        </section>
+        </div>
+        <div class="space-y-12">
+          <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestra Filosofía</h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              En Fyve Studio, creemos en la capacidad transformadora de la creatividad y la tecnología. Nos dedicamos a capturar y realzar los momentos más especiales de la vida a través de la fotografía y el video, utilizando enfoques innovadores y técnicas avanzadas.
+            </p>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              Nuestra misión es proporcionar a nuestros clientes imágenes y videos que no solo documenten eventos, sino que cuenten una historia y evoquen emociones duraderas.
+            </p>
+          </section>
 
-        <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
-          <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestro Equipo</h2>
-          <div class="mt-6 space-y-6">
-            <div class="flex items-center space-x-4">
-              <img
-                src="./images/avatars/avatar-1.webp"
-                alt="David Nacro"
-                class="h-20 w-20 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">David Nacro</h3>
-                <p class="text-lg text-gray-600 dark:text-gray-300">Fundador y CEO</p>
-                <p class="mt-2 text-gray-600 dark:text-gray-300">
-                  Apasionado de la videografía y la fotografía desde hace muchos años. Su visión y liderazgo han sido fundamentales para el crecimiento y éxito de Fyve Studio.
+          <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestro Equipo</h2>
+            <div class="mt-6 space-y-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./images/avatars/avatar-1.webp"
+                  alt="David Nacro"
+                  class="h-20 w-20 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-primary dark:text-primary-light">David Nacro</h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">Fundador y CEO</p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Apasionado de la videografía y la fotografía desde hace muchos años. Su visión y liderazgo han sido fundamentales para el crecimiento y éxito de Fyve Studio.
+                  </p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Además de dirigir la empresa, David participa activamente en cada proyecto, asegurando que cada detalle cumpla con nuestros altos estándares de calidad.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./images/avatars/avatar-2.webp"
+                  alt="Nicolas Aravena"
+                  class="h-20 w-20 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Nicolas Aravena</h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">CTO y Cofundador</p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Apasionado del mundo digital y experto en sonido para conciertos y eventos. Su conocimiento técnico y creatividad son vitales para nuestros proyectos.
+                  </p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Nicolas lidera nuestro equipo técnico, desarrollando soluciones innovadoras que nos permiten ofrecer resultados excepcionales.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./images/avatars/avatar-3.webp"
+                  alt="Maria Garcia"
+                  class="h-20 w-20 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Maria Garcia</h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">Asesora</p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Con una amplia experiencia en asesoramiento, Maria garantiza que cada cliente reciba la atención y orientación necesarias para sus proyectos.
+                  </p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Su habilidad para entender las necesidades de los clientes y traducirlas en resultados concretos es invaluable para nuestro equipo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./images/avatars/avatar-4.webp"
+                  alt="Laura Hernandez"
+                  class="h-20 w-20 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Laura Hernandez</h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">Atención al Cliente</p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Especialista en atención al cliente, Laura se asegura de que todas las necesidades de nuestros clientes sean atendidas de manera eficiente y amable.
+                  </p>
+                  <p class="mt-2 text-gray-600 dark:text-gray-300">
+                    Su enfoque empático y su capacidad para resolver problemas rápidamente la convierten en una pieza clave de nuestro equipo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-primary dark:text-primary-light">Nuestros Servicios</h2>
+            <div class="mt-6 space-y-6">
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Fotografía Profesional</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                  Ofrecemos servicios de fotografía profesional para eventos, retratos, productos y más. Nos especializamos en capturar momentos únicos con un toque artístico y profesional.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Videografía</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                  Nuestro equipo de videógrafos está listo para documentar y producir videos de alta calidad para bodas, eventos corporativos, campañas publicitarias y proyectos personales.
+                </p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Edición y Postproducción</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                  Además de capturar imágenes y videos, ofrecemos servicios completos de edición y postproducción para asegurar que el resultado final sea perfecto y acorde a tus expectativas.
                 </p>
               </div>
             </div>
-
-            <div class="flex items-center space-x-4">
-              <img
-                src="./images/avatars/avatar-2.webp"
-                alt="Nicolas Aravena"
-                class="h-20 w-20 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Nicolas Aravena</h3>
-                <p class="text-lg text-gray-600 dark:text-gray-300">CTO y Cofundador</p>
-                <p class="mt-2 text-gray-600 dark:text-gray-300">
-                  Apasionado del mundo digital y experto en sonido para conciertos y eventos. Su conocimiento técnico y creatividad son vitales para nuestros proyectos.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4">
-              <img
-                src="./images/avatars/avatar-3.webp"
-                alt="Maria Garcia"
-                class="h-20 w-20 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Maria Garcia</h3>
-                <p class="text-lg text-gray-600 dark:text-gray-300">Asesora</p>
-                <p class="mt-2 text-gray-600 dark:text-gray-300">
-                  Con una amplia experiencia en asesoramiento, Maria garantiza que cada cliente reciba la atención y orientación necesarias para sus proyectos.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-center space-x-4">
-              <img
-                src="./images/avatars/avatar-4.webp"
-                alt="Laura Hernandez"
-                class="h-20 w-20 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="text-2xl font-bold text-primary dark:text-primary-light">Laura Hernandez</h3>
-                <p class="text-lg text-gray-600 dark:text-gray-300">Atención al Cliente</p>
-                <p class="mt-2 text-gray-600 dark:text-gray-300">
-                  Especialista en atención al cliente, Laura se asegura de que todas las necesidades de nuestros clientes sean atendidas de manera eficiente y amable.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </Container>
   </main>
