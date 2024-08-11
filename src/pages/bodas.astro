@@ -1,0 +1,46 @@
+---
+import AppFooter from "../components/AppFooter.astro";
+import AppHeader from "../components/AppHeader.astro";
+import Features_bodas from '../components/Features_bodas.astro';
+import HeroSection_bodas from '../components/HeroSection_bodas.astro';
+import CallToAction from '../components/CallToAction.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<meta name="description" content="Template built with tailwindcss using Tailus blocks v2" />
+	<title>Fyve studio - bodas</title>
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white dark:bg-gray-900">
+	<AppHeader />
+	<main class="space-y-40 mb-40">
+		<header>
+			<HeroSection_bodas />
+		</header>
+		<section>
+			<Features_bodas />
+		</section>
+		<footer>
+			<CallToAction />
+		</footer>
+	</main>
+	<AppFooter />
+</body>
+</html>
+
+<style>
+	html {
+		font-family: 'Urbanist', sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+	}
+</style>

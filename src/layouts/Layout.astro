@@ -1,34 +1,37 @@
 ---
 import AppFooter from "../components/AppFooter.astro";
-import AppHeader from "../components/AppHeader.astro"
+import AppHeader from "../components/AppHeader.astro";
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Template built with tailwindcss using Tailus blocks v2">
-		<title>Five studio - Multimedia </title>
-
-		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
-	</head>
-	<body class="bg-white dark:bg-gray-900">
-		<AppHeader/>
-		<slot />
-		<AppFooter/>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content="Template built with tailwindcss using Tailus blocks v2">
+  <title>Five studio - Multimedia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-gray-900 m-0 p-0">
+  <AppHeader />
+  <slot />
+  <AppFooter />
+</body>
 </html>
 <style>
-	html {
-		font-family: Urbanist, sans-serif;
-		scroll-behavior: smooth;
-	}
+  html, body {
+    font-family: Urbanist, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
 
-	body {
-		margin: 0;
-	}
+  /* Estilos para asegurarse de que no haya espacios adicionales */
+  body > * {
+    margin: 0;
+    padding: 0;
+  }
 </style>
+  

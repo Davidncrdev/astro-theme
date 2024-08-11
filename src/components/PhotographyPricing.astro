@@ -1,0 +1,67 @@
+---
+import Container from "./Container.astro";
+---
+<Container>
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <div class="relative">
+    <h2 class="text-center text-4xl font-bold text-gray-800 dark:text-white mb-12">Paquetes de Fotografía</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Pack Silver -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-purple-500 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Pack Silver</h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía de todo el evento de la boda</li>
+          <li>6 horas de trabajo</li>
+          <li>Entrega de 400 fotos en alta definición</li>
+          <li>Entrega en digital</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">700€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+          <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+      <!-- Pack Gold -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-yellow-400 hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Pack Gold <span class="text-sm font-semibold text-white bg-purple-600 rounded px-2 py-1">Más Vendido</span></h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía de preboda</li>
+          <li>Convite (todo el evento hasta 2 horas de la fiesta)</li>
+          <li>Entrega en digital</li>
+          <li>500 fotos en alta calidad</li>
+          <li>Copia de seguridad digital</li>
+          <li>Pendrive personalizado</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">1200€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+          <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+      <!-- Pack Platinum -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-purple-500 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Pack Platinum</h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía de preboda</li>
+          <li>Convite (todo el evento sin límites)</li>
+          <li>Post boda</li>
+          <li>Entrega de álbum físico Premium de alta calidad</li>
+          <li>2 pendrives de copia de seguridad</li>
+          <li>Entrega digital en plataforma para compartir con familiares</li>
+          <li>30% de descuento en todas las sesiones contratadas con nosotros</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">2000€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+          <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</Container>
+
+<style>
+  a {
+    @apply cursor-pointer;
+  }
+</style>

@@ -1,0 +1,59 @@
+---
+import Container from "./Container.astro";
+---
+<Container>
+  
+    <h2 class="text-center text-4xl font-bold text-gray-800 dark:text-white mt-16 mb-12">Paquetes de Fotografía de Eventos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Evento Pack Básico -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-green-500 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Evento Pack Básico</h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía del evento</li>
+          <li>4 horas de cobertura</li>
+          <li>Entrega de 200 fotos en alta definición</li>
+          <li>Entrega en digital</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">400€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+          <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+      <!-- Evento Pack Estándar -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-blue-500 hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Evento Pack Estándar</h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía del evento</li>
+          <li>6 horas de cobertura</li>
+          <li>Entrega de 300 fotos en alta definición</li>
+          <li>Entrega en digital</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">600€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+      <!-- Evento Pack Premium -->
+      <div class="p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-red-500 hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Evento Pack Premium</h3>
+        <ul class="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
+          <li>Fotografía del evento</li>
+          <li>8 horas de cobertura</li>
+          <li>Entrega de 500 fotos en alta definición</li>
+          <li>Entrega en digital y físico</li>
+          <li>Álbum impreso de alta calidad</li>
+        </ul>
+        <p class="text-3xl font-bold text-gray-800 dark:text-white mb-6">900€</p>
+        <a href="tel:+34641437667" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+          <span class="relative text-base font-semibold text-white dark:text-dark">Contratar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</Container>
+
+<style>
+  a {
+    @apply cursor-pointer;
+  }
+</style>
